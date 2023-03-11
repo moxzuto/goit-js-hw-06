@@ -7,4 +7,14 @@ const ingredients = [
   'Condiments',
 ];
 
-const newLi = document.createElement('li');
+const ingredientsList = document.getElementById("ingredients");
+
+const ingredientsItems = ingredients.map((ingredients) => {
+  const li = document.createElement("li");
+  li.classList.add("item");
+  return li;
+})
+
+ingredientsList.append(...ingredientsItems);
+
+// console.log(ingredientsItems);
