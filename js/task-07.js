@@ -5,3 +5,4 @@ range.addEventListener('input', (event) => {
   const value = event.target.value;
   text.style.fontSize = `${value}px`;
 });
+
